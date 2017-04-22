@@ -1,0 +1,11 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Class12.Resourses">
+
+    <x:String x:Key="Animation">合成动画</x:String>
+    <x:String x:Key="Brush">合成画笔</x:String>
+    <x:String x:Key="Effect">合成效果</x:String>
+    <x:String x:Key="Refreshing">正在刷新</x:String>
+    
+</ResourceDictionary>

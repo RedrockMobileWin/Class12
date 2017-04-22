@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="Class12.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Class12"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <SplitView x:Name="splitview" DisplayMode="CompactOverlay" CompactPaneLength="100">
+
+            <SplitView.Content>
+                <Frame x:Name="page_frame"/>
+            </SplitView.Content>
+            
+            <SplitView.Pane>
+                <ListView x:Name="menu_listview" IsItemClickEnabled="True" ItemClick="menu_listview_ItemClick">
+                    <ListViewItem>
+                        <TextBlock Text="{StaticResource Animation}"/>
+                    </ListViewItem>
+                    <ListViewItem>
+                        <TextBlock Text="{StaticResource Brush}"/>
+                    </ListViewItem>
+                    <ListViewItem>
+                        <TextBlock Text="{StaticResource Effect}"/>
+                    </ListViewItem>
+                </ListView>
+            </SplitView.Pane>
+            
+        </SplitView>
+    </Grid>
+</Page>
